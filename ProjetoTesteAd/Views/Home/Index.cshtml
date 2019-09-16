@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+@model ProjetoTesteAd.Domain.Layout.Model
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 my-3 py-3 shadow-box">
+
+                <span>Período:</span>
+
+                <input type="text" id="from" value="2019-09-01" name="from" disabled>
+                <label for="to">até</label>
+                <input type="text" id="to" name="to" value="2019-09-03" disabled>
+
+                <div class="btn btn-success" id="search_pre"> Click </div>
+
+            </div>
+
+
+            <div class="col-12 py-3 my-3 shadow-box">
+
+                <form id="search_timesheet">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="holding">Holding</label>
+                            <select name="holding" id="holding" class="form-control">
+                                <option selected>Escolher...</option>
+                                @foreach (var item in Model.Holdings)
+                                {
+                                    <option>@item.name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputclient">Cliente</label>
+                            <select name="client" id="client" class="form-control">
+                                <option selected>Escolher...</option>
+                                @foreach (var item in Model.Users)
+                                {
+                                    <option>@item.name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-md-4">
+                            <label for="department">Departamento</label>
+                            <select name="department" id="department" class="form-control">
+                                <option selected>Escolher...</option>
+
+                                @foreach (var item in Model.Departments)
+                                {
+                                    <option>@item.name</option>
+                                }
+
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="usersgroup">Grupo de Usuário</label>
+                            <select name="usersgroup" id="usersgroup" class="form-control">
+                                <option selected>Escolher...</option>
+                                @foreach (var item in Model.UsersGroups)
+                                {
+                                    <option>@item.name</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="team">Equipe</label>
+                            <select name="team" id="team" class="form-control">
+                                <option selected>Escolher...</option>
+                                @foreach (var item in Model.Teams)
+                                {
+                                    <option>@item.name</option>
+                                }
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div class="container">
+
+    <div id="time_sheet">
+
+    </div>
+
+</div>
+

@@ -1,0 +1,5 @@
+﻿.shadow-box{
+	border-radius: 22.95px;
+    -webkit-box-shadow: 0 2px 20px rgba(0,0,0,.164);
+    box-shadow: 0 2px 20px rgba(0,0,0,.164);
+}
