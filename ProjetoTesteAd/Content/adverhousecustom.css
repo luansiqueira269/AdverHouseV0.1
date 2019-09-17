@@ -3,3 +3,33 @@
     -webkit-box-shadow: 0 2px 20px rgba(0,0,0,.164);
     box-shadow: 0 2px 20px rgba(0,0,0,.164);
 }
+
+#time_sheet .col-12, #time_sheet .col-2 {
+    height: 31px;
+    line-height: 31px;
+    font: 16px/31px Arial;
+}
+
+.client_name {
+    margin-left: 16px;
+}
+
+.product_name {
+    margin-left: 26px;
+}
+
+.campaign_name {
+    margin-left: 39px;
+}
+
+.job_name {
+    margin-left: 59px;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}

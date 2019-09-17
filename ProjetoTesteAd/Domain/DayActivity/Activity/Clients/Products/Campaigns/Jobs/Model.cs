@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProjetoTesteAd.Domain.Activity.Clients.Campaigns
+namespace ProjetoTesteAd.Domain.DayActivity.Activity.Clients.Products.Campaigns.Jobs
 {
     public class Model
     {
-        public int Time { get; set; }
+        public decimal Time { get; set; }
         public string Name { get; set; }
+        public int JobId { get; set; }
         public bool Aproval { get; set; }
-        public string Holding { get; set; }
 
     }
 }

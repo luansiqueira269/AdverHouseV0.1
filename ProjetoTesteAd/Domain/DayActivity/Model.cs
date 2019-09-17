@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ProjetoTesteAd.Domain.Activity
+namespace ProjetoTesteAd.Domain.DayActivity
 {
     public class Model
     {
-        public Clients.Model[] Client { get; set; }
+        public Activity.Model[] Activity { get; set; }
 
     }
 }
